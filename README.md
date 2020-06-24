@@ -9,8 +9,9 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - Babel
 
 ## Concepts
-- [Classes inheritance](scripts/module1/challenge1.js)
-- [Array operations (map, filter, find)](scripts/module1/challenge2.js)
-- [Arrow functions and Promises](scripts/module1/challenge3.js)
+- [Classes Inheritance](scripts/module1/challenge1.js)
+- [Array Operations (Map, Filter and Find)](scripts/module1/challenge2.js)
+- [Arrow Functions and Promises](scripts/module1/challenge3.js)
 - [Destructuring](scripts/module1/challenge4.js)
-- [Rest/Spread operators](scripts/module1/challenge5.js)
+- [Rest/Spread Operators](scripts/module1/challenge5.js)
+- [Template Literals](scripts/module1/challenge6.js)
