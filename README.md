@@ -13,3 +13,4 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - [Array operations (map, filter, find)](scripts/module1/challenge2.js)
 - [Arrow functions and Promises](scripts/module1/challenge3.js)
 - [Destructuring](scripts/module1/challenge4.js)
+- [Rest/Spread operators](scripts/module1/challenge5.js)
