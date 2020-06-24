@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.10.2"
   },
   "scripts": {
-    "dev": "babel ./scripts/main.js -o ./public/scripts/main.js",
+    "dev": "babel ./scripts/** -d ./public/scripts",
     "watch": "babel ./scripts/main.js -o ./public/scripts/main.js -w"
   }
 }
