@@ -7,7 +7,7 @@ Codes developed attending to ES6 Course offered by Rocketseat
 ## Technologies
 - Javascript
 - Babel
-- Webpack
+- Webpack / Webpack Dev Server
 
 ## Concepts
 - [Classes Inheritance](scripts/module1/challenge1.js)
