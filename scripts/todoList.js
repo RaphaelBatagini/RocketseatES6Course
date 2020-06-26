@@ -9,12 +9,13 @@ class List {
     }
 }
 
-class TodoList extends List {
-
-}
+class TodoList extends List {}
 
 const MinhaLista = new TodoList();
 
-document.getElementById('newTodo').onclick = function () {
-    MinhaLista.add('Novo item');
+const newTodoButton = document.getElementById('newTodo');
+if (newTodoButton) {
+    newTodoButton.onclick = function () {
+        MinhaLista.add('Novo item');
+    }
 }

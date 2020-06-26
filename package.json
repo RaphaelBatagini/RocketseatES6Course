@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
-    "@babel/preset-env": "^7.10.2"
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "dev": "babel ./scripts/** -d ./public/scripts",
-    "watch": "babel ./scripts/main.js -o ./public/scripts/main.js -w"
-  }
+    "dev": "webpack --mode=development",
+    "watch": "webpack --mode=development -w"
+  },
+  "dependencies": {}
 }
