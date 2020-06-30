@@ -10,6 +10,7 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - Webpack / Webpack Dev Server
 
 ## Concepts
+### Module 1
 - [Classes Inheritance](src/assets/scripts/module1/challenge1.js)
 - [Array Operations (Map, Filter and Find)](src/assets/scripts/module1/challenge2.js)
 - [Arrow Functions and Promises](src/assets/scripts/module1/challenge3.js)
@@ -17,4 +18,6 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - [Rest/Spread Operators](src/assets/scripts/module1/challenge5.js)
 - [Template Literals](src/assets/scripts/module1/challenge6.js)
 - [Object Short Syntax](src/assets/scripts/module1/challenge7.js)
+
+### Module 2
 - [Webpack Import/Export](src/assets/scripts/module2/)
