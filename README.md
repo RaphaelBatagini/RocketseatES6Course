@@ -17,3 +17,4 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - [Rest/Spread Operators](scripts/module1/challenge5.js)
 - [Template Literals](scripts/module1/challenge6.js)
 - [Object Short Syntax](scripts/module1/challenge7.js)
+- [Webpack Import/Export](scripts/module2/)
