@@ -8,6 +8,7 @@ Codes developed attending to ES6 Course offered by Rocketseat
 - Javascript
 - Babel
 - Webpack / Webpack Dev Server
+- Axios
 
 ## Concepts
 ### Module 1
@@ -21,3 +22,7 @@ Codes developed attending to ES6 Course offered by Rocketseat
 
 ### Module 2
 - [Webpack Import/Export](src/assets/scripts/module2/)
+
+### Module 3
+- [Async/Await (ES8)](src/assets/scripts/module3/challenge1.js)
+- [Async/Await with Axios](src/assets/scripts/module3/challenge2.js)
