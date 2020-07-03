@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/assets/scripts/main.js',
+    entry: [
+        '@babel/polyfill',
+        './src/assets/scripts/main.js',
+    ],
     output: {
         path: path.resolve(__dirname, 'public/scripts'),
         filename: 'main.js'
