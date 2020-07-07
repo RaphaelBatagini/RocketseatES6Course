@@ -8,7 +8,7 @@ module.exports = {
         ],
         app: [
             '@babel/polyfill',
-            './src/assets/scripts/app.js'
+            './src/assets/scripts/course-project/app.js'
         ]
     },
     output: {
