@@ -1,9 +1,12 @@
+import api from './api';
+
 class App {
     constructor() {
         this.repositories = [];
 
         this.elements = {
             form: document.getElementById('repo-form'),
+            input: document.querySelector('input[name="repository"]'),
             list: document.getElementById('repo-list')
         }
 
@@ -14,17 +17,48 @@ class App {
         this.elements.form.onsubmit = event => this.addRepositories(event);
     }
 
-    addRepositories(event) {
+    setLoading(loading = true) {
+        if (loading === true) {
+            let loadingElement = document.createElement('span');
+            loadingElement.setAttribute('id', 'loading');
+            loadingElement.appendChild(document.createTextNode('Carregando...'));
+
+            this.elements.form.appendChild(loadingElement);
+        } else {
+            document.getElementById('loading').remove();
+        }
+    }
+
+    async addRepositories(event) {
         event.preventDefault();
 
-        this.repositories.push({
-            name: 'Test',
-            description: 'Test Description',
-            avatar_url: 'https://avatars1.githubusercontent.com/u/9126880?v=4',
-            html_url: 'https://github.com/RaphaelBatagini/RocketseatES6Course',
-        });
+        let repository = this.elements.input.value;
 
-        this.render();
+        if (repository.length === 0)
+            return;
+
+        this.setLoading();
+
+        try {
+            const response = await api.get(`/repos/${repository}`);
+
+            const { name, description, html_url, owner: { avatar_url } } = response.data;
+
+            this.repositories.push({
+                name,
+                description,
+                avatar_url,
+                html_url,
+            });
+
+            this.elements.input.value = '';
+
+            this.render();
+        } catch (error) {
+            alert('O repositório não existe');
+        }
+
+        this.setLoading(false);
     }
 
     render() {
