@@ -26,3 +26,6 @@ Codes developed attending to ES6 Course offered by Rocketseat
 ### Module 3
 - [Async/Await (ES8)](src/assets/scripts/module3/challenge1.js)
 - [Async/Await with Axios](src/assets/scripts/module3/challenge2.js)
+
+### Project
+- [Application to search repositories on GitHub API using the concepts listed above](src/assets/scripts/course-project)
